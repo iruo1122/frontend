@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息表</title>
+</head>
+
+<body>
+<!--
+    基础表格结构说明：
+    1. <table> - 定义表格容器
+    2. <tr> - 表格行(table row)
+    3. <th> - 表头单元格(table header)，自动加粗居中
+    4. <td> - 标准数据单元格(table data)
+-->
+<table border="1">
+    <!-- border="1"：为表格添加1像素边框 -->
+
+    <caption><b>学生基本信息表</b></caption>
+    <!-- <caption>：表格标题，<b>加粗显示 -->
+
+    <!-- 表头行 -->
+    <tr>
+        <th>学号</th>
+        <!-- 第一列表头 -->
+        <th>姓名</th>
+        <!-- 第二列表头 -->
+        <th>年龄</th>
+        <!-- 第三列表头 -->
+        <th>专业</th>
+        <!-- 第四列表头 -->
+    </tr>
+
+    <!-- 第一行数据 -->
+    <tr>
+        <td>2023001</td>
+        <!-- 学号数据 -->
+        <td>张三</td>
+        <!-- 姓名数据 -->
+        <td>20</td>
+        <!-- 年龄数据 -->
+        <td>计算机科学</td>
+        <!-- 专业数据 -->
+    </tr>
+
+    <!-- 第二行数据 -->
+    <tr>
+        <td>2023002</td>
+        <td>李四</td>
+        <td>21</td>
+        <td>软件工程</td>
+    </tr>
+
+    <!-- 第三行数据 -->
+    <tr>
+        <td>2023003</td>
+        <td>王五</td>
+        <td>19</td>
+        <td>人工智能</td>
+    </tr>
+
+    <!-- 汇总行 -->
+    <tr>
+        <td colspan="3" align="center"><b>总人数</b></td>
+        <!--
+            colspan="3"：合并3个单元格
+            align="center"：内容居中
+        -->
+        <td><b>3</b></td>
+        <!-- 总人数数据 -->
+    </tr>
+</table>
+
+<br>
+<!-- 换行：在两个表格之间添加空行 -->
+
+<!-- 复杂表格示例：课程表 -->
+<table border="1" cellpadding="5">
+    <!-- cellpadding="5"：单元格内边距5像素 -->
+
+    <caption><b>学生课程表</b></caption>
+
+    <!-- 多行表头 -->
+    <tr>
+        <th rowspan="2">时间</th>
+        <!-- rowspan="2"：纵跨2行 -->
+        <th colspan="3">星期一</th>
+        <!-- colspan="3"：横跨3列 -->
+    </tr>
+
+    <tr>
+        <!-- 注意：因为第一列有rowspan，这里只有3个<th> -->
+        <th>第一节</th>
+        <th>第二节</th>
+        <th>第三节</th>
+    </tr>
+
+    <!-- 上午课程 -->
+    <tr>
+        <td>上午</td>
+        <td>高等数学</td>
+        <td>大学英语</td>
+        <td>数据结构</td>
+    </tr>
+
+    <!-- 下午课程 -->
+    <tr>
+        <td>下午</td>
+        <td>算法设计</td>
+        <td>计算机网络</td>
+        <td>体育</td>
+    </tr>
+</table>
+</body>
+</html>

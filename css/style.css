@@ -1,0 +1,68 @@
+ /* 全局样式设置 */
+        body {
+            font-family: Arial, sans-serif; /* 设置字体 */
+            line-height: 1.6; /* 设置行高，改善可读性 */
+            margin: 0; /* 移除默认外边距 */
+            padding: 0; /* 移除默认内边距 */
+            color: #333; /* 设置文字颜色为深灰色 */
+        }
+
+        /* 页眉样式 */
+        header {
+            background: #35424a; /* 设置背景颜色为深蓝灰色 */
+            color: white; /* 设置文字颜色为白色 */
+            padding: 20px; /* 设置内边距 */
+            text-align: center; /* 文字居中对齐 */
+        }
+
+        /* 导航栏样式 */
+        nav {
+            display: flex; /* 使用弹性布局 */
+            justify-content: center; /* 水平居中对齐子元素 */
+            background: #e8491d; /* 设置背景颜色为橙色 */
+            padding: 10px; /* 设置内边距 */
+        }
+
+        /* 导航链接样式 */
+        nav a {
+            color: white; /* 设置链接文字颜色为白色 */
+            text-decoration: none; /* 移除下划线 */
+            padding: 0 15px; /* 设置左右内边距 */
+        }
+
+        /* 主要内容区域样式 */
+        .container {
+            width: 80%; /* 设置宽度为视口的80% */
+            margin: auto; /* 水平居中 */
+            padding: 20px; /* 设置内边距 */
+        }
+
+        /* 文章样式 */
+        .post {
+            margin-bottom: 30px; /* 设置底部外边距 */
+            border-bottom: 1px solid #ccc; /* 添加底部边框 */
+            padding-bottom: 20px; /* 设置底部内边距 */
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center; /* 文字居中对齐 */
+            padding: 20px; /* 设置内边距 */
+            background: #35424a; /* 设置背景颜色与页眉一致 */
+            color: white; /* 设置文字颜色为白色 */
+        }
+
+        /* 新增：头像样式 */
+        .avatar-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .avatar {
+            width: 120px; /* 头像宽度 */
+            height: 120px; /* 头像高度 */
+            border-radius: 50%; /* 圆形边框 */
+            border: 4px solid white; /* 白色边框 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+            object-fit: cover; /* 保持图片比例并填充容器 */
+        }

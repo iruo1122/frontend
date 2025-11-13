@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>媒体元素演示</title>
+
+</head>
+
+<body>
+<!--
+    视频播放器示例
+    最佳实践：
+    1. 提供多种格式的视频源
+    2. 添加controls属性显示控制条
+    3. 添加后备文本
+-->
+<div class="media-container">
+    <h2>视频播放器</h2>
+    <video controls>
+        <!-- controls属性：显示播放控制条 -->
+        <source src="sample.mp4" type="video/mp4">
+        <!-- 第一个视频源：MP4格式（兼容性最好） -->
+        <source src="sample.webm" type="video/webm">
+        <!-- 第二个视频源：WebM格式（更小的文件大小） -->
+        您的浏览器不支持HTML5视频
+        <!-- 后备文本：当浏览器不支持video标签时显示 -->
+    </video>
+</div>
+
+<!--
+    音频播放器示例
+    注意：
+    1. 与video标签类似但不支持width/height属性
+    2. 同样需要提供多种格式
+-->
+<div class="media-container">
+    <h2>音频播放器</h2>
+    <audio controls>
+        <!-- controls属性：显示播放控制条 -->
+        <source src="sample.mp3" type="audio/mpeg">
+        <!-- 第一个音频源：MP3格式（最广泛支持） -->
+        <source src="sample.ogg" type="audio/ogg">
+        <!-- 第二个音频源：OGG格式（开源格式） -->
+        您的浏览器不支持HTML5音频
+        <!-- 后备文本：当浏览器不支持audio标签时显示 -->
+    </audio>
+</div>
+
+<!--
+    扩展知识：
+    1. 可以添加autoplay属性自动播放（移动端通常禁用）
+    2. 可以添加loop属性循环播放
+    3. 可以添加muted属性静音播放
+    4. 可以添加poster属性为视频指定封面图
+-->
+</body>
+</html>

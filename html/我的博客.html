@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 视口设置，使网页在移动设备上正确缩放 -->
+    <title>我的博客</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <!-- 页眉区域，通常包含网站标题和logo -->
+    <h1>欢迎来到我的博客</h1>
+    <!-- 头像区域 -->
+    <div class="avatar-container">
+        <img src="../resource/image/背景.jpg" alt="我的头像" class="avatar">
+    </div>
+</header>
+
+<nav>
+    <!-- 导航区域，包含网站的主要导航链接 -->
+    <a href="#">首页</a>
+    <a href="#">关于我</a>
+    <a href="#">文章</a>
+    <a href="#">联系</a>
+</nav>
+
+<div class="container">
+    <!-- 主要内容容器，包含博客文章 -->
+    <div class="post">
+        <h2>HTML学习笔记</h2>
+        <p>HTML是构建网页的基础...</p>
+        <a href="../../resource/image/音频与视频的属性.png" target="_blank">音频视频属性</a>
+    </div>
+    <div class="post">
+        <h2>用Git提交代码至GitHub远程仓库</h2>
+        <ol>
+            <li>在GitHub上创建远程仓库并获取地址</li>
+            <li>在文件资源管理器中找到想要提交代码所在的文件夹</li>
+            <li>右键使用Git Bash打开</li>
+            <li>"git init"用于初始化本地Git仓库</li>
+            <li>"git add ."用于添加所有文件到暂存区</li>
+            <li>"git remote add origin 地址"用于关联本地与远程仓库</li>
+            <li>"git push -u origin master"用于推送到远程仓库</li>
+        </ol>
+        <strong>更新本地文件:</strong>
+        <p>
+            git pull origin master  # 从远程仓库（origin）的master分支拉取（pull）最新更改</p>
+        <strong>更新GitHub上的文件:</strong>
+        <p>git add 1.html  # 告诉Git，哪些文件的改动需要被记录</p>
+        <p>git commit -m "修改了......"  # 在本地创建一个版本记录（提交）</p>
+        <p>git push origin master  # 将本地的提交推送到远程仓库</p>
+    </div>
+
+    <div>
+        <h2>我的兴趣爱好</h2>
+        <ul>
+            <li>篮球</li>
+            <li>阅读：哲学，地理，文学，历史，科幻，玄幻，仙侠</li>
+            <li>游戏:FPS游戏，魂游，动作，休闲，养成</li>
+            <li>写作</li>
+            <li>编程</li>
+            <li>散步</li>
+            <li>摄影</li>
+            <li>旅游</li>
+            <li>追剧，追番</li>
+            <li>剪辑</li>
+            <li>diy电脑</li>
+        </ul>
+    </div>
+    <div>
+        <h2>学习笔记</h2>
+        <p>创建目录css和html便于管理</p>
+        <p>新建文件添加相应后缀名，如：style.css</p>
+        <p>Gitee</p>
+        <p>博客园 菜鸟教程</p>
+        <p>在GitHub上面创建存储库之后，可以将相应代码文件拖入提交，若有新的提交再使用git命令</p>
+        <p>git命令在实际遇到问题时再针对学习了解</p>
+        <strong>更新于2025.11.12</strong>
+    </div>
+    <div class="post">
+        <h2>前端学习方向</h2>
+        <ol>
+            <li>CSS进阶：布局技术：Flexbox、Grid
+                响应式设计
+                CSS预处理器（如Sass）</li>
+            <li>
+                JavaScript：DOM操作
+                事件处理
+                AJAX/Fetch API
+                ES6+特性
+            </li>
+            <li>后端技术：Node.js + Express（基于JavaScript）
+                pJava Spring Boot（基于Java）
+                PHP + Laravel
+                Python + Django/Flask</li>
+            <li>数据库：MySQL或PostgreSQL（关系型）
+                MongoDB（非关系型）</li>
+            <li>
+                版本控制：Git和GitHub/GitLab
+            </li>
+            <li>部署知识：基本的Linux命令</li>
+            <li>Web服务器配置（Nginx/Apache）
+                云服务（如阿里云、腾讯云）</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>学习路径建议</h2>
+        <ol>
+            <li>初级阶段：完善HTML/CSS知识，制作静态页面
+                学习JavaScript基础，添加简单交互
+                使用Git管理代码</li>
+            <li>中级阶段：选择一个后端语言深入学习
+                学习数据库基础知识和SQL
+                尝试开发动态网页</li>
+            <li>高级阶段：学习框架（如前端React/Vue，后端Express/Spring等）
+                学习RESTful API设计
+                学习项目部署</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>项目开发建议</h2>
+        <P>从简单的静态博客开始，逐步添加功能,先实现核心功能（文章展示），再添加辅助功能（评论、分类等）
+            每完成一个功能就提交到GitHub，形成良好的版本控制习惯,可以参考现有开源博客系统（如WordPress、Hexo）的设计
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>版权所有 &copy; 2025 我的博客</p>
+</footer>
+</body>
+
+</html>
