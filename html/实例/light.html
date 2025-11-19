@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开关灯</title>
+    <link rel="stylesheet" href="../../css/light.css">
+</head>
+
+<body>
+<div class="container">
+    <!-- 内容容器，用于包裹灯泡和按钮 -->
+
+    <h1>灯泡控制</h1>
+    <!-- 页面标题 -->
+
+    <!--
+        div元素：创建一个块级容器作为灯泡
+        class="light"：应用基础灯泡样式
+        id="bulb"：为这个元素设置唯一标识，便于JavaScript操作
+    -->
+    <div class="light" id="bulb"></div>
+
+    <!--
+        button元素：创建按钮
+        id="switch"：为按钮设置唯一标识，便于添加点击事件
+    -->
+    <button id="switch">开/关</button>
+</div>
+
+<script src="../../JavaScript/light.js"></script>
+</body>
+</html>

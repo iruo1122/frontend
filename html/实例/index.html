@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 视口设置，使网页在移动设备上正确缩放 -->
     <title>我的博客</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
 <header>
@@ -14,7 +14,7 @@
     <h1>欢迎来到我的博客</h1>
     <!-- 头像区域 -->
     <div class="avatar-container">
-        <img src="../resource/image/背景.jpg" alt="我的头像" class="avatar">
+        <img src="../../resource/image/背景.jpg" alt="我的头像" class="avatar">
     </div>
 </header>
 
@@ -31,26 +31,26 @@
     <div class="post">
         <h2>HTML学习笔记</h2>
         <p>HTML是构建网页的基础...</p>
-        <a href="../../resource/image/音频与视频的属性.png" target="_blank">音频视频属性</a>
     </div>
     <div class="post">
         <h2>用Git提交代码至GitHub远程仓库</h2>
         <ol>
             <li>在GitHub上创建远程仓库并获取地址</li>
-            <li>在文件资源管理器中找到想要提交代码所在的文件夹</li>
-            <li>右键使用Git Bash打开</li>
+            <li>不要创建自述文件以及许可证，避免本地和远程仓库代码提交不同步</li>
+            <li>右键文件在资源管理器中打开，再用Git Bush打开文件夹</li>
             <li>"git init"用于初始化本地Git仓库</li>
             <li>"git add ."用于添加所有文件到暂存区</li>
             <li>"git remote add origin 地址"用于关联本地与远程仓库</li>
-            <li>"git push -u origin master"用于推送到远程仓库</li>
+            <li>"git commit -m "first commit"" 用于建立初始化提交</li>
+            <li>"git push -u origin main"用于推送到远程仓库</li>
         </ol>
         <strong>更新本地文件:</strong>
         <p>
-            git pull origin master  # 从远程仓库（origin）的master分支拉取（pull）最新更改</p>
+            git pull origin master  # 从远程仓库（origin）的main分支拉取（pull）最新更改</p>
         <strong>更新GitHub上的文件:</strong>
         <p>git add 1.html  # 告诉Git，哪些文件的改动需要被记录</p>
         <p>git commit -m "修改了......"  # 在本地创建一个版本记录（提交）</p>
-        <p>git push origin master  # 将本地的提交推送到远程仓库</p>
+        <p>git push origin main  # 将本地的提交推送到远程仓库</p>
     </div>
 
     <div>
@@ -77,7 +77,9 @@
         <p>博客园 菜鸟教程</p>
         <p>在GitHub上面创建存储库之后，可以将相应代码文件拖入提交，若有新的提交再使用git命令</p>
         <p>git命令在实际遇到问题时再针对学习了解</p>
-        <strong>更新于2025.11.12</strong>
+        <p>"git config --global init.defaultBranch main" 用于修改Git的全局默认分支名称</p>
+        <p></p>
+        <strong>更新于2025.11.13</strong>
     </div>
     <div class="post">
         <h2>前端学习方向</h2>

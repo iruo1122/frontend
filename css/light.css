@@ -1,0 +1,72 @@
+/* 定义灯泡的基础样式 */
+        .light {
+            width: 100px;         /* 设置宽度为100像素 */
+            height: 100px;        /* 设置高度为100像素 */
+            border-radius: 50%;   /* 设置圆角为50%，变成圆形 */
+            background-color: gray;  /* 初始背景色为灰色（关灯状态） */
+            transition: all 0.3s; /* 为所有样式变化添加0.3秒的过渡动画 */
+            margin: 20px auto;    /* 添加上下20px的外边距，水平居中 */
+        }
+
+        /* 定义灯泡开启时的样式 */
+        .light.on {
+            background-color: yellow;    /* 开启时背景色变为黄色 */
+            box-shadow: 0 0 20px gold;   /* 添加金色发光效果 */
+            /*
+                box-shadow属性参数说明：
+                第一个值：水平阴影位置（0表示不偏移）
+                第二个值：垂直阴影位置（0表示不偏移）
+                第三个值：模糊距离（20px表示模糊范围）
+                第四个值：阴影颜色（金色）
+            */
+        }
+
+        /* 定义按钮的样式 */
+        #switch {
+            background-color: #4CAF50; /* 设置背景颜色为绿色 */
+            border: none;               /* 移除默认边框 */
+            color: white;              /* 设置文字颜色为白色 */
+            padding: 15px 32px;         /* 设置内边距：上下15px，左右32px */
+            text-align: center;         /* 文字水平居中 */
+            text-decoration: none;      /* 移除文字下划线（针对链接） */
+            display: block;             /* 设置为块级元素，独占一行 */
+            font-size: 16px;            /* 设置字体大小 */
+            margin: 20px auto;          /* 添加上下20px的外边距，水平居中 */
+            cursor: pointer;            /* 鼠标悬停时显示手型光标 */
+            border-radius: 25px;        /* 设置圆角，使按钮变成椭圆形 */
+            transition: all 0.3s;       /* 为所有样式变化添加0.3秒的过渡动画 */
+        }
+
+        /* 定义按钮在鼠标悬停时的样式 */
+        #switch:hover {
+            background-color: #45a049;  /* 鼠标悬停时变为深绿色 */
+            transform: scale(1.05);     /* 轻微放大按钮（1.05倍） */
+        }
+
+        /* 设置页面整体样式 */
+        body {
+            display: flex;              /* 使用Flexbox布局 */
+            flex-direction: column;     /* 子元素垂直排列 */
+            justify-content: center;    /* 垂直居中 */
+            align-items: center;        /* 水平居中 */
+            min-height: 100vh;          /* 最小高度为视口高度（全屏） */
+            margin: 0;                  /* 移除默认外边距 */
+            font-family: Arial, sans-serif; /* 设置字体 */
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            /* 设置渐变背景：从左上到右下的浅蓝色渐变 */
+        }
+
+        /* 定义内容容器的样式 */
+        .container {
+            text-align: center;         /* 内部内容水平居中 */
+            padding: 30px;              /* 设置内边距 */
+            background-color: white;    /* 白色背景 */
+            border-radius: 15px;       /* 圆角边框 */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* 添加阴影效果 */
+        }
+
+        /* 设置标题样式 */
+        h1 {
+            color: #333;                /* 深灰色文字 */
+            margin-bottom: 20px;        /* 底部外边距 */
+        }
